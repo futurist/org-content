@@ -1,0 +1,111 @@
+* mac os 配置使用
+  :PROPERTIES:
+  :TITLE:    Blogging
+  :HUGO_TAGS:
+  :HUGO_TOPICS:
+  :HUGO_FILE: p/asdfasdf.md
+  :HUGO_DATE: [2016-05-12 Thu 18:39]
+  :END:
+
+#+TITLE: 我的MAC OSX设置
+#+SUBTITLE: (前端攻城师版)
+#+TAGS: mac, osx, env
+#+AUTHOR: 5分钟学院
+#+DATE: <2016-05-10 Tue>
+#+LANGUAGE: zh-CN
+#+OPTIONS: toc:nil H:6 num:4
+#+REVEAL_HLEVEL: 2
+
+
+
+** MAC OS X版本
+
+ 推荐使用[[https://en.wikipedia.org/wiki/OS_X_Mavericks][OS X Mavericks(10.9)]]及以上版本. 最新版是[[https://en.wikipedia.org/wiki/OS_X_El_Capitan][OS X El Capitan(10.11)]] [截止<2016-05-10 Tue>]
+
+*** 原因
+
+ 选择系统版本, 以下几点需考虑
+
+**** OS X 产品支持策略
+
+ 参考[[http://www.computerworld.com/article/2950580/operating-systems/the-end-is-near-for-os-x-mountain-lion-support.html][The end is near for OS X Mountain Lion support]]
+ Apple现在的版本管理是 ~n~, ~n-1~, ~n-2~ 三段式的，
+ 最新版本OS X属于 ~n~ ，它前面二个版本分别属于 ~n-1~, ~n-2~ ，老于 ~n-2~ 版本的，属于退休。
+ 比如，目前的三个OS X版本状态
+
+ - El Capitan(10.11) : ~n~
+ - Yosemite(10.10) : ~n-1~
+ - Mavericks(10.9) : ~n-2~
+ - Mountain Lion(10.8) : ~n-3~ *退休(retired)*
+
+**** 软件支持
+
+ 很多软件更新都会参照此规则，如果要学习或使用最新的技术，必然会受到影响。
+ 比如， =Google Chrome 52= 就无法在 =OS X 10.8= 中使用，这样比如 =Javascript (ES7)ES2016= 中的新特性等就无法在新版浏览器中直接体验[[https://www.reddit.com/r/javascript/comments/4hfe01/es7_support_will_arrive_in_chrome_52_currently/][ES7 Support Will Arrive in Chrome 52]]。
+
+ =Xcode= 也比较挑系统，最新版肯定能得到更好的支持。
+
+**** 新的系统特性
+
+ - OS X El Capitan(10.11) ::
+
+   1. 增强了触控板体验，可以更好的切换多空间、程序等，提高开发效率以及查资料的效率。
+
+   2. 三指点击触控板来查选中的单词，特别适合E文不好的同学 :)
+
+   3. [[https://support.apple.com/zh-cn/ht204948][Split View]] 简直酷毕了, 可以把编辑器IDE和浏览器并排在一个空间, 配合live reload, 不动鼠标实时看效果。
+
+** MAC OS X常用软件
+   :PROPERTIES:
+   :ARTICLE:  smaller
+   :END:
+
+ - [[https://www.google.co.jp/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjekpaK487MAhWInJQKHRiMAZMQFggeMAA&url=https%253A%252F%252Fqsapp.com%252F&usg=AFQjCNGjh-l9IJna2ZkatglcDy7ySZlmhw&sig2=ttoHlVQEPgHehXeYhwA3zw][Quicksilver]]
+
+   快捷键 / 默认触发字 / 频率调整
+
+ - [[http://down.tech.sina.com.cn/content/43718.html][Chrome浏览器]]
+
+   命令行加入: `--ignore-certificate-errors`
+
+   扩展: [[https://chrome.google.com/webstore/detail/ibogfemlnclpecapkojhmanpiebldbnk][有道]]词典 / [[https://chrome.google.com/webstore/detail/reuse-localhost-tab/adgnhgnbeddcacjoaimbpfhbfgeebein][Reuse localhost tab]] / [[https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei][LiveReload]] / [[https://chrome.google.com/webstore/detail/ohnfdmfkceojnmepofncbddpdicdjcoi][Fast newtab redirect]]
+
+ - [[https://itunes.apple.com/en/app/xcode/id497799835?mt=12][Xcode]]
+
+   这个安装完，打开一次后，可以安装 [[http://brew.sh/][Homebrew]]
+
+ - [[https://itunes.apple.com/us/app/go2shell/id445770608?mt=12][Go2Shell]]
+
+   要从iTunes Store中安装旧版 / 注意拖动到Finder后才真正发挥威力
+
+ - [[https://www.sublimetext.com/][Sublime Text]] 专题介绍
+
+ - [[https://www.gnu.org/software/emacs/][GNU Emacs]] 专题介绍
+
+
+** MAC OS X常用设置
+
+ 根据个人习惯进行配置, 以下是我常用的设置
+
+*** 触控板设置
+
+ =10.10=, =10.11= 使用触控板进行 *单手拖移* 的选项移到了“系统偏好设置”->"辅助功能"->“鼠标与触控板”->“触控板选项”->“启用拖移”
+ 如果用得习惯, 可以启用 *拖移锁定*
+
+*** Find偏好设置
+
+ - 边栏 :: 勾选 %HOME% 图标
+
+ - 通用 :: =开启新finder窗口时打开= 选择 %HOME% (%HOME%就是你的Mac登录帐户名称)
+
+ - 高级 :: 勾选 [x] *显示所有文件扩展名* ； /执行搜索时/ 选择  *搜索当前文件夹*
+
+*** 系统偏好设置
+
+ - 通用 :: =默认Web浏览器= 选择 *Google Chrome*
+
+ - 键盘 :: 勾选 [X] *将F1、F2等键用作标准功能键* ； /修饰键/ 将 *Caps Lock* 键映射到 *^* (Control)
+
+** Footnotes
+
+

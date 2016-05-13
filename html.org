@@ -1,0 +1,38 @@
+* HTML简介
+  :PROPERTIES:
+  :TITLE:    HTML简介
+  :HUGO_TAGS: html, css, javascript, w3c
+  :HUGO_TOPICS:
+  :HUGO_FILE: baike/HTML-jian-jie.md
+  :HUGO_DATE: [2016-05-13 Fri 10:49]
+  :END:
+
+*HTML* (英文全称 ~HyperText Markup Language~ , 中文翻译 ~超文本标记语言~ ), 是供 ~浏览器~ 读取并解释的 ~标记语言~ 文本, 并可承载 ~CSS~, ~Javscript~ 代码文本共同构成可视(可听)的 ~网页~. 一般放置在 ~服务器~ 中提供资源共享.
+
+** 在网页中的作用
+
+1. 提供网页基本视觉结构, 以及为搜索引擎提供 ~语义~, 便于 ~SEO~
+2. 承载 ~CSS~, ~Javascript~ 及 ~图片~  ~声音~ ~视频~ ~浏览器插件~
+3. 提供 ~链接~ 以跳转到其它 ~网页~
+
+** 发展历史
+
+#+CAPTION: Adobe Dreamweaver 中关于HTML文档类型的设置
+#+NAME: fig:html-dw-dtd
+#+ATTR_HTML: :width 300px
+[[./2016-05-13_204612.png]]
+
+
+- 早期 :: 物理学家 [[https://en.wikipedia.org/wiki/Tim_Berners-Lee][Tim Berners-Lee]] 于80年代发明, 并编写了基本的 ~浏览器~ 与 ~服务器~, 主要用于学术交流, 如内含数学公式生成等特性.
+- 草稿版 :: 1991年10月公布第一版, 并经历了几次 ~HTML DTD~ 修订
+- HTML 2.0 :: 1995年11月, 由 ~IETF~ 发布 ( [[https://tools.ietf.org/html/rfc1866][RFC 1866]] )
+- HTML 3.2 :: 1997年1月, 由 ~W3C~ 发布, 主要支持浏览器(Netscape, 微软IE)
+- HTML 4.0 :: 1997年12月, 由 ~W3C~ 发布, 内含三个模式: *Strict (严格)*, *Transitional (过渡)*, *Frameset (框架)*, 正式引入 ~CSS~, 遵循 ~SGML~ 规范
+- HTML 4.01 :: 1999年12月, 修订之前的一些错误, 功能上无改进
+- XHTML :: 2000年5月, 基于 ~HTML 4.01 Strict~ 以及 ~XML~ 语法发布了严格语法的 XHTML 1.0, 并于2001年发布 XHTML 1.1
+- HTML5 :: 2014年10月, 由 ~W3C~ 和 ~WHATWG~ 开发, 由 ~W3C~ 发布
+
+
+* CSS简介
+
+CSS是什么?
